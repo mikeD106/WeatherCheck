@@ -48,7 +48,7 @@ def get_weather_data(url):
         days = soup.find("div", attrs={"id": "wob_dp"})
         for day in days.findAll("div", attrs={"class": "wob_df"}):
             # extract the name of the day
-            day_name = day.find("div", attrs={"class": "vk_lgy"}).attrs['aria-label']
+            day_name = day.find("div", attrs={"class": "QrNVmd Z1VzSb"}).attrs['aria-label']
             # get weather status for that day
             weather = day.find("img").attrs["alt"]
             temp = day.findAll("span", {"class": "wob_t"})
